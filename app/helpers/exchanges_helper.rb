@@ -8,4 +8,5 @@ module ExchangesHelper
       'THB', 'TRY', 'USD', 'ZAR'
     ]
   end
+
 end
