@@ -15,5 +15,19 @@ RSpec.configure do |config|
             }
         ]
       }', headers: {})
+
+    stub_request(:get, /blockchain.info/ )
+    .with(headers: {
+      'Accept'=>'*/*'
+    }).to_return(status: 200, body: '
+      {
+        "status": true,
+        "currency": [
+            {
+                "currency": "BRL",
+                "value": 35000
+            }
+        ]
+      }', headers: {})
   end
 end

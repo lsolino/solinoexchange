@@ -22,7 +22,8 @@
         </div>
 
         <div>
-          <%= image_tag '/exchange.png', class: 'img-fluid icon-exchange' %>
+          <%= button_tag image_tag('/exchange.png'), type: 'button', class: 'img-fluid icon-exchange', id: 'btn-exchange-currency' %>
+          <%# image_tag '/exchange.png', class: 'img-fluid icon-exchange', id: 'btn-exchange-currency' %>
         </div>
 
         <br>
@@ -38,9 +39,6 @@
           </div>
         </div>
 
-        <div>
-          <button type='submit' class='btn btn-primary btn-exchange col-md-12'>CONVERTER</button>
-        </div>
       <% end %>
     </div>
   </div>
