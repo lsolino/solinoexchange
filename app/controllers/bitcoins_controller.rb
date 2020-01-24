@@ -5,7 +5,7 @@ class BitcoinsController < ApplicationController
   def convert
     value = BitcoinService.new(
       params[:currency], 
-      params[:amount]]
+      params[:amount]
     ).perform
     render json: {value: value}
   end
